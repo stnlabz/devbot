@@ -1,0 +1,34 @@
+{
+  "mode": "core",
+  "paths": {
+    "plugins": "./plugins",
+    "logs": "./logs"
+  },
+  "plugins": {
+    "enabled": ["devclock", "file_watch", "ghostnote"],
+    "disabled": ["devthink", "mood"]
+  },
+  "output": {
+    "mode": "file",
+    "path": "./logs",
+    "format": "jsonl",
+    "db_enabled": false
+  },
+  "ai": {
+    "enabled": false,
+    "webhook_url": "",
+    "secret": ""
+  },
+  "db": {
+    "host": "localhost",
+    "user": "",
+    "pass": "",
+    "name": ""
+  },
+  "admin_id": 2,
+  "summary": {
+    "enabled": false,
+    "write_json": false
+  }
+}
+
