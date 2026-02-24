@@ -3,7 +3,7 @@
 // Purpose: Detect changes to watched files based on hash diffing
 error_log('FILEWATCH RUNNING: ' . date('c'));
 $devRoot = dirname(__DIR__);
-$logDir  = $devRoot . '/logs';
+$log_dir  = $devRoot . '/logs';
 $watch_file = dirname(__DIR__) . '/.filewatch.json';
 $watched_dirs = [
     dirname(__DIR__, 2) . '/modules/',
