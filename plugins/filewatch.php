@@ -8,7 +8,10 @@ $watched_dirs = [
     dirname(__DIR__, 2) . '/themes/',
     dirname(__DIR__, 2) . '/app/',
     dirname(__DIR__, 2) . '/css/',
-    dirname(__DIR__, 2) . '/includes/'
+    dirname(__DIR__, 2) . '/includes/',
+    // MVC Patterns
+    dirname(__DIR__, 2) . '/public/',
+    dirname(__DIR__, 2) . '/app/'
 ];
 
 $hashes = [];
