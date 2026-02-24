@@ -20,4 +20,4 @@ $moods = [
 srand(strtotime($today));
 $mood = $moods[array_rand($moods)];
 
-$todays_logs[] = "?? Rictus Mood Today:\n\n\"$mood\"";
+$todays_logs[] = "?? DevBots Mood for  Today:\n\n\"$mood\"";
