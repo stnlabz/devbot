@@ -16,3 +16,13 @@ DevBot is the reporting layer of the STN-Labz ecosystem.
  
  ## About
  DevBot acts as a transparent observer — a diagnostic and historical tool that keeps clear, consistent insight into ongoing work without ever interfering with it.
+
+## How to use
+ - Drop devbot in yuor websites root
+ - navigate to `pubroot/devbot/config` and edit `devbot_config.json`
+ - navigate back to the devbot root
+ - `php devbot.php`
+
+## Common Platforms
+ - Chaos CMS
+ - Standard MVC Platforms
