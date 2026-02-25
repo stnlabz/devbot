@@ -1,6 +1,6 @@
 
 # devbot
-The DevBot Plugin
+The DevBot App
 
 The PHP Developers companion.
 
