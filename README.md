@@ -13,6 +13,9 @@ DevBot is the reporting layer of the STN-Labz ecosystem.
  - records development conditions. 
  
  Each run produces structured reports that help track progress, identify changes, and document the state of the system over time.
+
+ ### MVC Specific
+ In an MVC environment, it seeks the core outer (commonly found in `/app/core/router.php`), and then traverses the controllers tree `/app/controllers`) and from there ensures that classes are present, looks into your functions, maps to models and views, and if any of that is a mess, it will tell you. 
  
  ## About
  DevBot acts as a transparent observer — a diagnostic and historical tool that keeps clear, consistent insight into ongoing work without ever interfering with it.
