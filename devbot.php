@@ -230,9 +230,25 @@ $payload = [
     'stats'   => $stats,
 ];
 
+// ------------------------------------------------------------
+// mvc_triage structural enforcement
+// ------------------------------------------------------------
+$forceFail = false;
+
+if (isset($signals['mvc_triage']['summary']['status'])) {
+    if ($signals['mvc_triage']['summary']['status'] === 'failed') {
+        $forceFail = true;
+        devbot_log('mvc_triage reported structural failure. Exit code forced to 1.');
+    }
+}
+
 /** Write output directly */
 $ok = devbot_write_output($payload, $config);
 devbot_log('Output write: ' . ($ok ? 'OK' : 'FAILED'));
+
+if ($forceFail) {
+    exit(1);
+}
 
 exit($ok ? 0 : 1);
 
