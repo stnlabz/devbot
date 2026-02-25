@@ -1,19 +1,6 @@
 <?php
 declare(strict_types=1);
 
-/**
- * DevBot Plugin: mvc_triage (schema_version 1.0.0)
- *
- * Immutable contract:
- * - Scope: public/index.php, app/core/router.php, app/controllers/*.php, app/views/**/*.php
- * - Token-based parsing only (no includes, no reflection, no execution)
- * - Full inventory every run
- * - Recon: new/modified/removed via sha1 hashes
- * - Router issues are CRITICAL
- * - Continue scanning after contact; always report full battlefield
- *
- * @package STN-Labz\DevBot
- */
 
 const MVC_TRIAGE_SCHEMA_VERSION = '1.0.0';
 
